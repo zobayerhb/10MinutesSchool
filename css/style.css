@@ -1,0 +1,329 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+:root {
+  --primary-color: #fff;
+  --secondary-color: #111827;
+  --para-color: #ddd;
+  --button-color: #11a64c;
+  --circle-color: red;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 0.8;
+  color: var(--primary-color);
+}
+p {
+  text-transform: capitalize;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: var(--para-color);
+}
+ul,
+ol {
+  list-style-type: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  color: #fff;
+  text-transform: capitalize;
+}
+img {
+  width: 100%;
+}
+/* Default CSS */
+.common_heading {
+  margin-bottom: 20px;
+  line-height: 150%;
+}
+.common_btn {
+  background: var(--button-color);
+  font-weight: 600;
+  padding: 12px 30px;
+  border: 2px solid var(--button-color);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.common_btn:hover {
+  background: transparent;
+  border: 2px solid var(--button-color);
+}
+/* Nav start here */
+#nav_bar {
+  background: #fff;
+}
+.nav_logo {
+  width: 100px;
+}
+.banner_img img {
+  width: 400px;
+}
+/* Nav end here */
+
+/* Feature Start Here */
+#feature {
+  background: var(--secondary-color);
+  margin-top: 300px;
+}
+.feature_details span {
+  color: #ddd;
+  font-size: 14px;
+  position: relative;
+}
+
+.feature_details span:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: blue;
+  bottom: -5px;
+}
+.feature_heading h2 {
+  line-height: 112%;
+  margin-top: 20px;
+  font-weight: 500;
+}
+.feature_img {
+  width: 250px;
+  margin: 0 auto;
+  animation: featureImage 2s linear infinite alternate;
+  -webkit-animation: featureImage 2s linear infinite alternate;
+}
+@keyframes featureImage {
+  0% {
+    transform: translateY(-4%);
+    -webkit-transform: translateY(-4%);
+    -moz-transform: translateY(-4%);
+    -ms-transform: translateY(-4%);
+    -o-transform: translateY(-4%);
+  }
+  100% {
+    transform: translateY(4%);
+    -webkit-transform: translateY(4%);
+    -moz-transform: translateY(4%);
+    -ms-transform: translateY(4%);
+    -o-transform: translateY(4%);
+  }
+}
+.icon_detail h6 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.details_icon i {
+  font-size: 24px;
+  color: var(--button-color);
+}
+/* Feature End Here */
+
+/* Reviews Start here */
+#reviews {
+  margin-top: 100px;
+  background: url("../images/client_bg.svg");
+  background-position: center;
+}
+.reviews_heading h2 {
+  color: #000;
+}
+.reviews_heading p {
+  color: #999999;
+}
+.reviews_details {
+  background: #f8f8f8;
+  padding: 30px 38px;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.reviews_details p {
+  color: #aaaaaa;
+  line-height: 170%;
+}
+.client_information h5 {
+  color: #000;
+  font-size: 16px;
+  margin: 0;
+}
+.client_information i {
+  font-size: 14px;
+  color: #f3be3c;
+}
+.reviews_details:hover {
+  background: var(--button-color);
+}
+.reviews_details:hover p {
+  color: #f5f3f3;
+}
+.reviews_details:hover .client_information h5 {
+  color: var(--primary-color);
+}
+.reviews_details:hover.client_information i {
+  font-size: 16px;
+}
+/* Reviews End here */
+
+/* App download link start here */
+#download {
+  background: var(--secondary-color);
+  padding: 60px 0;
+  position: relative;
+  margin: 100px 0;
+}
+.d_button {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  margin-top: 15px;
+}
+.d_button a {
+  background: var(--button-color);
+  color: var(--primary-color);
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid var(--button-color);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0s3s;
+}
+.d_button a:hover {
+  color: #fff;
+  background: transparent;
+  border: 2px solid var(--button-color);
+}
+.d_image {
+  position: absolute;
+  top: -48px;
+  width: 270px;
+  animation: dImage 2s linear infinite alternate;
+  -webkit-animation: dImage 2s linear infinite alternate;
+}
+@keyframes dImage {
+  from {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+  to {
+    transform: translateY(5%);
+    -webkit-transform: translateY(6%);
+    -moz-transform: translateY(5%);
+    -ms-transform: translateY(5%);
+    -o-transform: translateY(5%);
+  }
+}
+
+.d_image2 {
+  position: absolute;
+  width: 270px;
+  top: 46px;
+}
+/* App download link end here */
+
+/* FAQ Start here */
+#faq {
+  background: #f4f7fd;
+  margin: 150px 0 100px 0;
+  padding: 100px 0;
+}
+.faq_heading h2 {
+  color: #000;
+  margin-top: 20px;
+}
+.faq_heading p {
+  color: #000;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+.faq_accordion {
+  box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
+  padding: 15px 36px;
+  background: #fff;
+  border-radius: 10px;
+}
+.accordion-header {
+  padding: 10px 20px;
+}
+.accordion-button:focus {
+  border-color: 0;
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent;
+}
+/* FAQ End here */
+
+/* learn More Start here */
+#learnMore {
+  position: relative;
+  background: url("../images/learn_banner.jpg") 50% 50% fixed;
+  padding: 58px 0;
+  z-index: -9;
+}
+#learnMore::before {
+  position: absolute;
+  content: "";
+  background: rgba(17, 24, 39, 0.74);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -9;
+}
+.learn_title h2 {
+  font-size: 34px;
+}
+/* learn More End here */
+
+/* FAQ Start here */
+
+/* FAQ End here */
+
+/* FAQ Start here */
+
+/* FAQ End here */
