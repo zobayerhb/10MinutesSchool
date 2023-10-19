@@ -60,7 +60,7 @@ img {
 }
 .common_btn {
   background: var(--button-color);
-  font-weight: 600;
+  font-weight: 500;
   padding: 12px 30px;
   border: 2px solid var(--button-color);
   border-radius: 8px;
