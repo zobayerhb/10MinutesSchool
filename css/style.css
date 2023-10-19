@@ -116,7 +116,7 @@ a.nav-link.nav_item_link:hover {
 /* Feature Start Here */
 #feature {
   background: var(--secondary-color);
-  margin-top: 300px;
+  margin-top: 100px;
 }
 .feature_details span {
   color: #ddd;
@@ -283,6 +283,12 @@ section#team {
   font-size: 16px;
 }
 /* Reviews End here */
+
+/* Screen Shot Start Here */
+#screenShot {
+  margin-top: 100px;
+}
+/* Screen Shot End Here */
 
 /* App download link start here */
 #download {
