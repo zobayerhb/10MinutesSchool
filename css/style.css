@@ -78,9 +78,11 @@ img {
   background: transparent;
   border: 2px solid var(--button-color);
 }
+
 /* Nav start here */
 #nav_bar {
   background: #fff;
+  padding: 10px 0;
 }
 .nav_logo {
   width: 100px;
@@ -88,7 +90,26 @@ img {
 .banner_img img {
   width: 400px;
 }
+a.nav-link.nav_item_link {
+  padding: 6px 13px !important;
+  transition: all linear 0.3s;
+}
+
+a.nav-link.nav_item_link:hover {
+  background: var(--button-color);
+  color: #fff;
+  border-radius: 6px;
+}
 /* Nav end here */
+
+/* Banner Start Here */
+#banner {
+  position: relative;
+  background: var(--secondary-color);
+  /* width: 100%; */
+  height: 80vh;
+}
+/* Banner End Here */
 
 /* Feature Start Here */
 #feature {
