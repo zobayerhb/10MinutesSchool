@@ -113,6 +113,7 @@ a.nav-link.nav_item_link:hover {
   position: relative;
   overflow: hidden;
   padding: 20px 0;
+  position: relative;
 }
 .banner_content {
   position: relative;
