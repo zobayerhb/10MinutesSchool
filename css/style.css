@@ -108,7 +108,7 @@ a.nav-link.nav_item_link:hover {
 
 /* Banner Start Here */
 #banner {
-  background: url("../images/banner-bg2.png");
+  background: var(--secondary-color);
   height: 90vh;
 }
 /* Banner End Here */
