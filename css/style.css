@@ -172,6 +172,12 @@ a.nav-link.nav_item_link:hover {
   top: 0;
   left: 0;
 }
+.header_wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
 /* Banner End Here */
 
 /* Feature Start Here */
