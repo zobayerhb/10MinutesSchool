@@ -389,23 +389,15 @@ section#team {
   position: absolute;
   top: -48px;
   width: 270px;
-  animation: dImage 2s linear infinite alternate;
-  -webkit-animation: dImage 2s linear infinite alternate;
+  animation: dImage 1s linear infinite alternate;
+  -webkit-animation: dImage 1s linear infinite alternate;
 }
 @keyframes dImage {
   from {
     transform: translateY(0%);
-    -webkit-transform: translateY(0%);
-    -moz-transform: translateY(0%);
-    -ms-transform: translateY(0%);
-    -o-transform: translateY(0%);
   }
   to {
     transform: translateY(5%);
-    -webkit-transform: translateY(6%);
-    -moz-transform: translateY(5%);
-    -ms-transform: translateY(5%);
-    -o-transform: translateY(5%);
   }
 }
 
