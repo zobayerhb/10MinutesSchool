@@ -1,3 +1,9 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #111827;
+  --para-color: #aaaaaa;
+  --button-color: #11a64c;
+}
 /* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 
@@ -6,17 +12,11 @@
   padding: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
+html,body {
+  scroll-behavior: unset !important;
 }
 body {
   font-family: "Poppins", sans-serif;
-}
-:root {
-  --primary-color: #fff;
-  --secondary-color: #111827;
-  --para-color: #aaaaaa;
-  --button-color: #11a64c;
 }
 h1,
 h2,
@@ -37,13 +37,10 @@ p {
   font-size: 14px;
   line-height: 150%;
   color: var(--para-color);
-  margin: 0;
 }
 ul,
 ol {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
 }
 span {
   font-size: 14px;
@@ -62,7 +59,7 @@ img {
 /* Default CSS */
 .common_heading {
   margin-bottom: 18px;
-  /* line-height: 150%; */
+  line-height: 150%;
 }
 .common_btn {
   color: #fff;
@@ -91,12 +88,24 @@ img {
   background: #fff;
   padding: 22px 0;
 }
+.navbar.xyz{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.1);
+-webkit-box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.1);
+-moz-box-shadow: 0px 3px 7px 2px rgba(0,0,0,0.1);
+}
 .nav_logo {
-  width: 100px;
+  width: 130px;
 }
 a.nav-link.nav_item_link {
-  padding: 6px 16px !important;
+  padding: 6px 20px !important;
   transition: all linear 0.3s;
+  font-size: 18px;
 }
 
 a.nav-link.nav_item_link:hover {
@@ -117,6 +126,11 @@ a.nav-link.nav_item_link:hover {
   overflow: hidden;
   padding: 20px 0;
   position: relative;
+  /* margin-bottom: 100px; */
+}
+.one{
+  height: 100px;
+  background-color: #fafbfe;
 }
 .banner_content {
   position: relative;
@@ -164,6 +178,8 @@ a.nav-link.nav_item_link:hover {
   -moz-transform: rotate(22deg);
   -ms-transform: rotate(22deg);
   -o-transform: rotate(22deg);
+  position: relative;
+  z-index: 555;
 }
 .b_shape_img {
   position: absolute;
@@ -187,7 +203,7 @@ a.nav-link.nav_item_link:hover {
 /* Feature Start Here */
 #feature {
   background: var(--secondary-color);
-  margin-top: 100px;
+  /* margin-top: 100px; */
   padding: 35px 0;
 }
 .feature_details span {
@@ -244,10 +260,11 @@ a.nav-link.nav_item_link:hover {
 /* Feature End Here */
 
 /* Team Start Here */
-section#team {
-  margin-top: 100px;
+#team {
+  /* margin-top: 100px; */
   background: #f4f7fd;
-  padding: 60px 0;
+  padding-bottom: 60px;
+  padding-top: 100px;
 }
 .team_box {
   cursor: pointer;
@@ -263,22 +280,37 @@ section#team {
 }
 .team_img {
   position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 .team_img img {
-  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .team_details h4 {
   color: var(--secondary-color);
 }
 .team_social_link {
   position: absolute;
-  bottom: 26px;
+  bottom: -100px;
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   -o-transform: translateX(-50%);
+  width: 100%;
+  height: 100px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  transition: all linear 0.4s;
+}
+.team_img:hover .team_social_link{
+  bottom: 0;
 }
 .team_social_link a i {
   color: var(--secondary-color);
@@ -320,7 +352,7 @@ section#team {
 }
 .reviews_details {
   background: var(--secondary-color);
-  padding: 30px 38px;
+  padding: 60px 38px;
   cursor: pointer;
   border-radius: 6px;
   box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
@@ -334,6 +366,7 @@ section#team {
   color: #aaaaaa;
   line-height: 170%;
 }
+
 .client_information h5 {
   color: #fff;
   font-size: 16px;
@@ -342,6 +375,9 @@ section#team {
 .client_information i {
   font-size: 14px;
   color: #f3be3c;
+}
+.reviews_details p{
+  text-align: justify;
 }
 .reviews_details:hover {
   background: var(--button-color);
@@ -376,6 +412,28 @@ section#team {
 #screenShot {
   margin-top: 100px;
 }
+.screenshot_image{
+  margin: 0 20px;
+}
+#screenShot .slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  column-gap: 10px;
+}
+#screenShot .slick-dots li button{
+  display: none;
+}
+#screenShot .slick-dots li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+#screenShot .slick-dots li.slick-active{
+  background-color: var(--button-color);
+}
 /* Screen Shot End Here */
 
 /* App download link start here */
@@ -384,6 +442,7 @@ section#team {
   padding: 60px 0;
   position: relative;
   margin: 100px 0;
+  margin-bottom: 0;
 }
 .d_button {
   display: flex;
@@ -439,7 +498,8 @@ section#team {
 #faq {
   background: #f4f7fd;
   margin: 150px 0 100px 0;
-  padding: 130px 0px 100px 0;
+  padding: 290px 0px 100px 0;
+  margin-top: 0;
 }
 .faq_heading h2 {
   color: #000;
@@ -579,9 +639,35 @@ ul.widget_list li a:hover {
   right: 32px;
   bottom: 26px;
   background: var(--button-color);
-  padding: 0px 13px;
+  
+  display: none;
+ 
+  
+}
+.bottom_top_icon .inner{
+  width: 50px;
+  height: 50px;
   border-radius: 8px;
   font-size: 28px;
-  cursor: pointer;
+  display: flex;
+  cursor: pointer; 
+  align-items: center;
+  justify-content: center;
 }
 /* Bottom Top End here */
+.preloader{
+  background-color: var(--secondary-color);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.preloader img{
+  width: 280px;
+  filter: invert(1);
+}
