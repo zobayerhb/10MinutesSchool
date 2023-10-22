@@ -93,6 +93,7 @@ a.nav-link.nav_item_link {
   padding: 6px 20px !important;
   transition: all linear 0.3s;
   font-size: 18px;
+  color: var(--secondary-color);
 }
 
 a.nav-link.nav_item_link:hover {

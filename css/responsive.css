@@ -1,0 +1,62 @@
+/* ===================== Extra Small Devices ===================== */
+@media(max-width: 575.98px){
+    /* Nav Start Here */
+    #nav_bar {
+        padding: 10px 0;
+    }
+    .nav_logo {
+        width: 100px;
+    }
+    .navbar-toggler {
+        border: none
+    }
+    .navbar-toggler{
+        padding: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none
+    }
+    .navbar-nav {
+        padding-top: 10px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    a.nav-link.nav_item_link {
+        padding: 0px 0px !important;
+        font-size: 16px;
+    }
+    /* Nav End Here */
+
+    /* Banner Start Here */
+    .banner_content h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 17px;
+    }
+    .banner_content h1 span {
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .banner_content p {
+        font-size: 14px;
+    }
+    .teach_board{
+        display: none;
+    }
+    .header_shape {
+        top: 6px;
+        width: 200px;
+    }
+    .banner_img {
+        width: 196px;
+        transform: rotate(22deg);
+        -webkit-transform: rotate(22deg);
+        -moz-transform: rotate(22deg);
+        -ms-transform: rotate(22deg);
+        -o-transform: rotate(22deg);
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    /* Banner End Here */
+}
