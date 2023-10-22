@@ -32,7 +32,7 @@ $(function () {
 });
 //preloader
 $(window).on('load',function(){
-  $('.preloader').delay(1000).fadeOut(300);
+  $('.preloader').delay(700).fadeOut(300);
 });
     
 });
