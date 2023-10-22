@@ -75,7 +75,7 @@
 
     /* Team Start Here */
     #team {
-        padding: 28px 0 20px 0;
+        padding: 28px 0 10px 0;
     }
     .team_box {
         margin: 16px 0 0px 0;
@@ -95,6 +95,9 @@
     /* Team End Here */
 
     /* Rreviews Start Here */
+    #reviews {
+        margin-top: 12px;
+    }
     .reviews_heading h2 {
         font-size: 30px;
     }
@@ -107,6 +110,9 @@
     /* Reviews End Here */
 
     /* Videos Start Here */
+    #videos {
+        margin-top: 12px;
+    }
     .videos_icon h2 {
         font-size: 30px;
     }
@@ -130,7 +136,7 @@
     /* App Download Start Here */
     #download {
         padding: 40px 0;
-        margin: 50px 0;
+        margin: 50px 0 0 0;
     }
     .download_app_details h2 {
         font-size: 30px;
@@ -148,13 +154,72 @@
         column-gap: 12px;
     }
     .d_button a {
-        padding: 6px 11px;
+        padding: 6px 10px;
     }
     .d_button a i {
         font-size: 20px;
         margin: 0;
     }
     /* App Download End Here */
+
+    /* Faq Start Here */
+    #faq {
+        padding: 25px 0;
+    }
+    .faq_heading h2 {
+        margin-top: 0;
+    }
+    .faq_heading p {
+        font-size: 14px;
+    }
+    .faq_accordion {
+        padding: 15px 6px;
+    }
+    .accordion-header {
+        padding: 6px 0px;
+    }
+    /* Faq End Here */
+
+    /* Learn More Start Here */
+    #learnMore {
+        padding: 30px 0;
+    }
+    .learn_title h2 {
+        font-size: 28px;
+    }
+    .learn_para p {
+        font-size: 14px;
+        color: #ddd !important;
+    }
+    .learn_button {
+        text-align: left !important;
+    }
+    /* Learn More End Here */
+
+    /* Footer Start Here */
+    #footer {
+        padding: 25px 0 10px 0;
+        margin-top: 20px;
+    }
+    .widget_img {
+        margin-bottom: 12px;
+    }
+    .widget p {
+        font-size: 14px;
+    }
+    .widget_social_link {
+        margin-bottom: 25px;
+    }
+    .widget_list {
+        margin-top: 14px;
+    }
+    .widget_app_download {
+        margin-top: 18px;
+    }
+    .copyright {
+        padding-top: 23px;
+    }
+    /* Footer End Here */
 
     /* Feature Start Here */
     /* Feature End Here */
