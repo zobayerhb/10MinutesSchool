@@ -50,13 +50,114 @@
     }
     .banner_img {
         width: 196px;
-        transform: rotate(22deg);
-        -webkit-transform: rotate(22deg);
-        -moz-transform: rotate(22deg);
-        -ms-transform: rotate(22deg);
-        -o-transform: rotate(22deg);
         margin: 0 auto;
         padding-top: 10px;
     }
     /* Banner End Here */
+
+    /* Feature Start Here */
+    .feature_heading h2 {
+        font-size: 36px;
+    }
+    .feature_heading p {
+        font-size: 14px;
+    }
+    .feature_img {
+        padding: 30px 0;
+    }
+    .details_icon {
+        margin-bottom: 14px;
+    }
+    .icon_detail p {
+        font-size: 14px;
+    }
+    /* Feature End Here */
+
+    /* Team Start Here */
+    #team {
+        padding: 28px 0 20px 0;
+    }
+    .team_box {
+        margin: 16px 0 0px 0;
+    }
+    .team_heading h2 {
+        font-size: 30px;
+    }
+    .team_heading p {
+        font-size: 14px;
+    }
+    .team_details h4 {
+        font-size: 20px;
+    }
+    .team_details span {
+        font-size: 14px;
+    }
+    /* Team End Here */
+
+    /* Rreviews Start Here */
+    .reviews_heading h2 {
+        font-size: 30px;
+    }
+    .reviews_heading p {
+        font-size: 14px;
+    }
+    .reviews_details {
+        margin-bottom: 16px;
+    }
+    /* Reviews End Here */
+
+    /* Videos Start Here */
+    .videos_icon h2 {
+        font-size: 30px;
+    }
+    .videos_icon p {
+        font-size: 14px;
+    }
+    /* Videos End Here */
+
+    /* Screen Shot Start Here */
+    #videos {
+        padding: 100px 0;
+    }
+    #screenShot {
+        margin-top: 20px;
+    }
+    .screenshot_image {
+        margin: 0;
+    }
+    /* Screen Shot End Here */
+
+    /* App Download Start Here */
+    #download {
+        padding: 40px 0;
+        margin: 50px 0;
+    }
+    .download_app_details h2 {
+        font-size: 30px;
+    }
+    .download_app_details p {
+        font-size: 14px;
+    }
+    .d_image {
+        display: none;
+    }
+    .d_image2 {
+        display: none;
+    }
+    .d_button {
+        column-gap: 12px;
+    }
+    .d_button a {
+        padding: 6px 11px;
+    }
+    .d_button a i {
+        font-size: 20px;
+        margin: 0;
+    }
+    /* App Download End Here */
+
+    /* Feature Start Here */
+    /* Feature End Here */
+
+
 }

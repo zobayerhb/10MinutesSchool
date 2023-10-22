@@ -93,7 +93,7 @@ a.nav-link.nav_item_link {
   padding: 6px 20px !important;
   transition: all linear 0.3s;
   font-size: 18px;
-  color: var(--secondary-color);
+  color: var(--secondary-colors);
 }
 
 a.nav-link.nav_item_link:hover {
@@ -198,6 +198,7 @@ a.nav-link.nav_item_link:hover {
   background: var(--secondary-color);
   /* margin-top: 100px; */
   padding: 35px 0;
+  overflow: hidden;
 }
 .feature_details span {
   color: #ddd;
@@ -267,19 +268,27 @@ a.nav-link.nav_item_link:hover {
 
 /* Team Start Here */
 #team {
-  /* margin-top: 100px; */
   background: #f4f7fd;
   padding-bottom: 60px;
   padding-top: 100px;
 }
 .team_box {
-  /* cursor: pointer; */
   background: #ffff;
   padding: 22px;
   margin: 22px 0;
   text-align: center;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
+}
+.team_heading h2 {
+  color: #000;
+  font-size: 42px;
+}
+.team_heading p {
+  color: #999999;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 .team_details h4 {
   font-size: 24px;
@@ -354,6 +363,7 @@ a.nav-link.nav_item_link:hover {
   margin-top: 100px;
   background: url("../images/client_bg.svg");
   background-position: center;
+  overflow: hidden;
 }
 .reviews_heading h2 {
   color: #000;
@@ -362,7 +372,7 @@ a.nav-link.nav_item_link:hover {
 .reviews_heading p {
   color: #999999;
   font-size: 16px;
-  width: 500px;
+  max-width: 500px;
   margin: 0 auto;
 }
 .reviews_details {
@@ -468,6 +478,7 @@ a.nav-link.nav_item_link:hover {
   position: relative;
   margin: 100px 0;
   margin-bottom: 0;
+  overflow: hidden;
 }
 .download_app_details h2 {
   color: #fff;
@@ -476,7 +487,7 @@ a.nav-link.nav_item_link:hover {
 .download_app_details p {
   font-size: 16px;
   color: #ddddddd6;
-  width: 500px;
+  max-width: 500px;
 }
 .d_button {
   display: flex;
