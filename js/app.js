@@ -1,5 +1,10 @@
 // Rotate slider
 $(function () {
+  //preloader
+$(window).on('load',function(){
+  $('.preloader').delay(700).fadeOut(300);
+});
+
   $('.screenshot_wrapper').slick({
     infinite: true,
     slidesToShow: 4,
@@ -28,13 +33,7 @@ $(function () {
     else{
       $('.bottom_top_icon').fadeOut(300);
     }
-
 });
-//preloader
-$(window).on('load',function(){
-  $('.preloader').delay(700).fadeOut(300);
-});
-    
 });
 // AOS INITIALIZATION
 AOS.init({
