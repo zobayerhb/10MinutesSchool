@@ -29,6 +29,9 @@
     /* Nav End Here */
 
     /* Banner Start Here */
+    #banner{
+        padding: 42px 0;
+    }
     .banner_content h1 {
         font-size: 36px;
         text-align: center;
@@ -131,6 +134,10 @@
     .screenshot_image {
         margin: 0;
     }
+    .slick-slide img {
+        width: 280px;
+        margin: 0 auto;
+      }
     /* Screen Shot End Here */
 
     /* App Download Start Here */
@@ -215,14 +222,23 @@
     }
     .widget_app_download {
         margin-top: 18px;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .widget_app_download a {
+        padding: 10px 6px;
     }
     .copyright {
         padding-top: 23px;
     }
     /* Footer End Here */
 
-    /* Feature Start Here */
-    /* Feature End Here */
+    /* Bottom To Top Start Here */
+    .bottom_top_icon {
+        right: 8px;
+        bottom: 92px;
+    }
+    /* Bottom To Top End Here */
 
 
 }

@@ -117,7 +117,7 @@ a.nav-link.nav_item_link:hover {
   /* margin-bottom: 100px; */
 }
 .one{
-  height: 100px;
+  height: 20px;
   background-color: #fafbfe;
 }
 .banner_content {
@@ -305,6 +305,7 @@ a.nav-link.nav_item_link:hover {
   border-radius: 10px;
   height: 330px;
   object-fit: cover;
+  cursor: pointer;
 }
 .team_img img {
   object-fit: cover;
@@ -390,19 +391,22 @@ a.nav-link.nav_item_link:hover {
 .reviews_details p {
   color: #aaaaaa;
   line-height: 170%;
-}
+  text-align: justify;
 
-.client_information h5 {
+}
+.client_information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.client_name h5 {
   color: #fff;
   font-size: 16px;
   margin: 0;
 }
-.client_information i {
+.client_reviews i {
   font-size: 14px;
   color: #f3be3c;
-}
-.reviews_details p{
-  text-align: justify;
 }
 .reviews_details:hover {
   background: var(--button-color);
@@ -425,9 +429,53 @@ a.nav-link.nav_item_link:hover {
   padding: 200px 0;
   margin-top: 100px;
 }
+.videos_icon{
+  position: relative;
+}
 .videos_icon a i{
   font-size: 70px;
   color: var(--button-color);
+  position: relative;
+}
+.videos_icon a i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #06ff0063;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 99;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  animation: pulse 1.5s infinite;
+  -webkit-animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    opacity: 0;
+  }
 }
 .videos_icon h2 {
   color: #fff;
@@ -438,6 +486,14 @@ a.nav-link.nav_item_link:hover {
   font-size: 15px;
   color: #ddddddd6;
   line-height: 25px;
+}
+.vbox-container {
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.vbox-close {
+  font-size: 20px;
 }
 /* App Videos End Here */
 
@@ -576,6 +632,14 @@ a.nav-link.nav_item_link:hover {
 .accordion-button::after {
   background-image: url("../images/faq_icon.png");
 }
+.accordion-button:not(.collapsed)::after{
+  background-image: url("../images/faq_icon.png");
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+}
 /* FAQ End here */
 
 /* learn More Start here */
@@ -612,7 +676,7 @@ a.nav-link.nav_item_link:hover {
   background: var(--button-color);
   color: #fff;
   border: 2px solid var(--button-color);
-  border-radius: 16px;
+  border-radius: 4px;
   width: 30px;
   height: 30px;
   display: flex;
@@ -624,6 +688,10 @@ a.nav-link.nav_item_link:hover {
   -moz-transition: all linear 0.3s;
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
 }
 .widget_social_link a i:hover {
   background: transparent;
@@ -652,6 +720,9 @@ ul.widget_list li a:hover {
 }
 .widget_app_download {
   margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 .widget_app_download a{
   background: transparent;
@@ -665,6 +736,7 @@ ul.widget_list li a:hover {
   -o-transition: all linear 0.3s;
   width: 166px;
   color: #fff;
+  text-align: center;
 }
 .widget_app_download a i {
   font-size: 22px;
@@ -697,10 +769,16 @@ ul.widget_list li a:hover {
   right: 32px;
   bottom: 26px;
   background: var(--button-color);
-  
-  display: none;
- 
-  
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
 }
 .bottom_top_icon .inner{
   width: 50px;
@@ -712,6 +790,9 @@ ul.widget_list li a:hover {
   align-items: center;
   justify-content: center;
   color: #fff;
+}
+.bottom_top_icon:hover {
+  background: #00b548;
 }
 /* Bottom Top End here */
 
