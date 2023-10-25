@@ -63,11 +63,11 @@ $(window).on('load',function(){
       $('.bottom_top_icon').fadeOut(300);
     }
 });
-
 //Venobox js
 $('.venobox').venobox();
 
 });
+
 // AOS INITIALIZATION
 AOS.init({
   offset: 250,

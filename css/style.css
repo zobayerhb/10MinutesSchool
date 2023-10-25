@@ -497,7 +497,25 @@ a.nav-link.nav_item_link:hover {
 }
 /* App Videos End Here */
 
-
+/* Counter Start Here */
+#counts{
+  background: var(--secondary-color);
+  padding: 100px 0;
+  margin-top: 100px;
+}
+.counter_up {
+  text-align: center;
+  color: white;
+  border-right: 1px solid #11a64c;
+}
+.rem{
+  border: none;
+}
+.counter_up h1 {
+  color: #11a64c;
+  margin-bottom: 14px;
+}
+/* Counter End Here */
 
 /* Screen Shot Start Here */
 #screenShot {
@@ -613,9 +631,9 @@ a.nav-link.nav_item_link:hover {
   padding-bottom: 28px;
 }
 .faq_accordion {
-  box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
+  /* box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1); */
   padding: 15px 36px;
-  background: #fff;
+  /* background: #fff; */
   border-radius: 10px;
 }
 .accordion-header {
@@ -639,6 +657,15 @@ a.nav-link.nav_item_link:hover {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+.accordion-item {
+  box-shadow: 0px 3px 7px 0px rgb(67 100 157 / 43%);
+  margin-bottom: 24px;
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
 }
 /* FAQ End here */
 
