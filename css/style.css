@@ -89,14 +89,14 @@ a {
 .nav_logo {
   width: 130px;
 }
-a.nav-link.nav_item_link {
+.nav_item_link {
   padding: 6px 20px !important;
   transition: all linear 0.3s;
   font-size: 18px;
   color: var(--secondary-colors);
 }
 
-a.nav-link.nav_item_link:hover {
+.nav_item_link:hover {
   background: var(--button-color);
   color: #fff;
   border-radius: 6px;
@@ -189,6 +189,9 @@ a.nav-link.nav_item_link:hover {
   position: absolute;
   bottom: -1px;
   left: 0;
+  width: 100%;
+}
+.header_wave img{
   width: 100%;
 }
 /* Banner End Here */
@@ -695,6 +698,7 @@ a.nav-link.nav_item_link:hover {
 }
 .widget p {
   color: #ddddddd6;
+  margin-right: 100px;
 }
 .widget_social_link a {
   margin-right: 8px;
