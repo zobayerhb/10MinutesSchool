@@ -1,14 +1,12 @@
-$('.counter').counterUp({
-  delay: 10,
-  time: 1000
+$(function () {
+  $('.preloader').preloadinator().delay(700).fadeOut(700)
 });
 
-// Rotate slider
 $(function () {
   //preloader
-$(window).on('load',function(){
-  $('.preloader').delay(700).fadeOut(300);
-});
+  // $(window).on('load',function(){
+  //   $('.preloader').delay(700).fadeOut(300);
+  // });
 
   $('.screenshot_wrapper').slick({
     infinite: true,
@@ -47,15 +45,10 @@ $(window).on('load',function(){
       // instead of a settings object
     ]
   });
-
-  //back to top
-  $(".bottom_top_icon").click(function(){
-    $('html,body').animate({scrollTop:0},1000);
-  })
   //sticky menu
   $(window).on('scroll',function(){
     let main = 0
-     main = $(this).scrollTop();
+    main = $(this).scrollTop();
     if(main > 250){
       $(".navbar").addClass("xyz")
     }else{
@@ -67,16 +60,24 @@ $(window).on('load',function(){
     else{
       $('.bottom_top_icon').fadeOut(300);
     }
-});
-//Venobox js
-$('.venobox').venobox();
+  });
+  //Venobox js
+  $('.venobox').venobox();
+  // Counter part
+  $('.counter').counterUp({
+    delay: 60,
+    time: 2000
+  });
+  //back to top
+  $(".bottom_top_icon").click(function(){
+    $('html,body').animate({scrollTop:0},1000);
+  })
+  // AOS INITIALIZATION
+  AOS.init({
+    offset: 250,
+    duration: 500,
+  });
 
-});
-
-// AOS INITIALIZATION
-AOS.init({
-  offset: 250,
-  duration: 500,
 });
 
 
