@@ -1,8 +1,7 @@
-$(function () {
-  $('.preloader').preloadinator().delay(700).fadeOut(700)
-});
+
 
 $(function () {
+  $('.preloader').preloadinator().delay(700).fadeOut(1000)
   //preloader
   // $(window).on('load',function(){
   //   $('.preloader').delay(700).fadeOut(300);
