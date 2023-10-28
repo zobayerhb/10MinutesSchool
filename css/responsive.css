@@ -117,6 +117,17 @@
     }
     /* Reviews End Here */
 
+    /* Counter Start Here */
+    #counts {
+        padding: 50px 0;
+        margin-top: 26px;
+    }
+    .counter_up {
+        margin-bottom: 15px;
+        padding: 20px 0;
+    }
+    /* Counter End Here */
+
     /* Team Start Here */
     #team {
         padding: 28px 0 10px 0;
@@ -185,31 +196,33 @@
     }
     /* Faq End Here */
 
-    /* Learn More Start Here */
-    #learnMore {
-        padding: 30px 0;
+    /* Newaletter Start Here */
+    #newsletter {
+        padding: 50px 0;
     }
-    .learn_title h2 {
-        font-size: 28px;
+    .news_title h3 {
+        font-size: 27px;
     }
-    .learn_para p {
+    .news_title p {
         font-size: 14px;
-        color: #ddd !important;
     }
-    .learn_button {
-        text-align: left !important;
+    .news-subscribe {
+        margin-top: 25px;
     }
-    /* Learn More End Here */
+    /* Newaletter End Here */
 
     /* Footer Start Here */
     #footer {
         padding: 25px 0 10px 0;
-        margin-top: 20px;
     }
     .widget_img {
         margin-bottom: 12px;
     }
+    .widget{
+        text-align: center;
+    }
     .widget p {
+        text-align: left;
         font-size: 14px;
     }
     .widget_social_link {
@@ -222,6 +235,7 @@
         margin-top: 18px;
         flex-direction: row;
         column-gap: 20px;
+        justify-content: center;
     }
     .widget_app_download a {
         padding: 10px 6px;
@@ -654,8 +668,7 @@
     }
     .widget_app_download {
         margin-top: 18px;
-        flex-direction: row;
-        column-gap: 20px;
+        flex-direction: column;
     }
     .widget_app_download a {
         padding: 10px 6px;
