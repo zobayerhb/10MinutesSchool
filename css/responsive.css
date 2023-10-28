@@ -30,7 +30,7 @@
 
     /* Banner Start Here */
     #banner{
-        padding: 42px 0;
+        padding: 82px 0;
     }
     .banner_content h1 {
         font-size: 36px;
@@ -76,6 +76,47 @@
     }
     /* Feature End Here */
 
+    /* Screen Shot Start Here */
+    #screenShot {
+        margin-top: 20px;
+    }
+    .screenshot_image {
+        margin: 0;
+    }
+    .slick-slide img {
+        width: 280px;
+        margin: 0 auto;
+    }
+    /* Screen Shot End Here */
+
+    /* Videos Start Here */
+    #videos {
+        margin-top: 12px;
+        padding: 100px 0;
+    }
+    .videos_icon h2 {
+        font-size: 30px;
+    }
+    .videos_icon p {
+        font-size: 14px;
+    }
+    /* Videos End Here */
+
+    /* Rreviews Start Here */
+    #reviews {
+        margin-top: 12px;
+    }
+    .reviews_heading h2 {
+        font-size: 30px;
+    }
+    .reviews_heading p {
+        font-size: 14px;
+    }
+    .reviews_details {
+        margin-bottom: 16px;
+    }
+    /* Reviews End Here */
+
     /* Team Start Here */
     #team {
         padding: 28px 0 10px 0;
@@ -96,49 +137,6 @@
         font-size: 14px;
     }
     /* Team End Here */
-
-    /* Rreviews Start Here */
-    #reviews {
-        margin-top: 12px;
-    }
-    .reviews_heading h2 {
-        font-size: 30px;
-    }
-    .reviews_heading p {
-        font-size: 14px;
-    }
-    .reviews_details {
-        margin-bottom: 16px;
-    }
-    /* Reviews End Here */
-
-    /* Videos Start Here */
-    #videos {
-        margin-top: 12px;
-    }
-    .videos_icon h2 {
-        font-size: 30px;
-    }
-    .videos_icon p {
-        font-size: 14px;
-    }
-    /* Videos End Here */
-
-    /* Screen Shot Start Here */
-    #videos {
-        padding: 100px 0;
-    }
-    #screenShot {
-        margin-top: 20px;
-    }
-    .screenshot_image {
-        margin: 0;
-    }
-    .slick-slide img {
-        width: 280px;
-        margin: 0 auto;
-      }
-    /* Screen Shot End Here */
 
     /* App Download Start Here */
     #download {
@@ -232,13 +230,438 @@
         padding-top: 23px;
     }
     /* Footer End Here */
-
-    /* Bottom To Top Start Here */
-    .bottom_top_icon {
-        right: 8px;
-        bottom: 92px;
+}
+/* ===================== Small Devices ===================== */
+@media(min-width: 576px) and (max-width: 767.98px) {
+    /* Nav Start Here */
+    #nav_bar {
+        padding: 14px 0;
     }
-    /* Bottom To Top End Here */
+    .navbar-toggler {
+        border: none
+    }
+    .navbar-toggler{
+        padding: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none
+    }
+    .navbar-nav {
+        padding-top: 10px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    a.nav-link.nav_item_link {
+        padding: 0px 0px !important;
+        font-size: 16px;
+    }
+    /* Nav End Here */
 
+    /* Banner Start Here */
+    #banner{
+        padding: 82px 0;
+    }
+    .banner_content h1 {
+        font-size: 38px;
+        margin-bottom: 17px;
+    }
+    .banner_content h1 span {
+        font-size: 38px;
+        font-weight: 600;
+    }
+    .banner_content p {
+        font-size: 14px;
+    }
+    .teach_board{
+        display: none;
+    }
+    .header_shape {
+        top: 6px;
+        width: 200px;
+    }
+    .banner_img {
+        width: 196px;
+        margin: 0 auto;
+        padding-top: 10px;
+    }
+    /* Banner End Here */
 
+    /* Feature Start Here */
+    .feature_heading h2 {
+        font-size: 36px;
+    }
+    .feature_heading p {
+        font-size: 14px;
+    }
+    .feature_img {
+        padding: 30px 0;
+    }
+    .details_icon {
+        margin-bottom: 14px;
+    }
+    .icon_detail p {
+        font-size: 14px;
+    }
+    /* Feature End Here */
+
+    /* Screen Shot Start Here */
+    #screenShot {
+        margin-top: 20px;
+    }
+    .screenshot_image {
+        margin: 0;
+    }
+    .slick-slide img {
+        width: 230px;
+        margin: 0 auto;
+    }
+    /* Screen Shot End Here */
+
+     /* Videos Start Here */
+    #videos {
+        margin-top: 12px;
+        padding: 120px 0;
+    }
+    .videos_icon h2 {
+        font-size: 30px;
+    }
+    .videos_icon p {
+        font-size: 14px;
+    }
+    /* Videos End Here */
+
+    /* Rreviews Start Here */
+    #reviews {
+        margin-top: 12px;
+    }
+    .reviews_heading h2 {
+        font-size: 30px;
+    }
+    .reviews_heading p {
+        font-size: 14px;
+    }
+    .reviews_details {
+        margin-bottom: 16px;
+    }
+    /* Reviews End Here */
+
+    /* Counst Start Here */
+    #counts {
+        margin-top: 36px;
+    }
+    /* Counst End Here */
+
+    /* Team Start Here */
+    #team {
+        padding: 28px 0 10px 0;
+    }
+    .team_box {
+        margin: 16px 0 0px 0;
+    }
+    .team_heading h2 {
+        font-size: 30px;
+    }
+    .team_heading p {
+        font-size: 14px;
+    }
+    .team_details h4 {
+        font-size: 20px;
+    }
+    .team_details span {
+        font-size: 14px;
+    }
+    /* Team End Here */
+
+    /* App Download Start Here */
+    #download {
+        padding: 40px 0;
+        margin: 50px 0 0 0;
+    }
+    .download_app_details h2 {
+        font-size: 30px;
+    }
+    .download_app_details p {
+        font-size: 14px;
+    }
+    .d_image {
+        display: none;
+    }
+    .d_image2 {
+        display: none;
+    }
+    .d_button {
+        column-gap: 12px;
+    }
+    .d_button a {
+        padding: 6px 10px;
+    }
+    .d_button a i {
+        font-size: 20px;
+        margin: 0;
+    }
+    /* App Download End Here */
+
+    /* Faq Start Here */
+    #faq {
+        padding: 25px 0;
+    }
+    .faq_heading h2 {
+        margin-top: 0;
+    }
+    .faq_heading p {
+        font-size: 14px;
+    }
+    .faq_accordion {
+        padding: 15px 6px;
+    }
+    .accordion-header {
+        padding: 6px 0px;
+    }
+    /* Faq End Here */
+
+    /* Learn More Start Here */
+    #learnMore {
+        padding: 30px 0;
+    }
+    .learn_title h2 {
+        font-size: 28px;
+    }
+    .learn_para p {
+        font-size: 14px;
+        color: #ddd !important;
+    }
+    .learn_button {
+        text-align: left !important;
+    }
+    /* Learn More End Here */
+
+    /* Footer Start Here */
+    #footer {
+        padding: 25px 0 10px 0;
+        margin-top: 20px;
+    }
+    .widget_img {
+        margin-bottom: 12px;
+    }
+    .widget p {
+        font-size: 14px;
+    }
+    .widget_social_link {
+        margin-bottom: 25px;
+    }
+    .widget_list {
+        margin-top: 14px;
+    }
+    .widget_app_download {
+        margin-top: 18px;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .widget_app_download a {
+        padding: 10px 6px;
+    }
+    .copyright {
+        padding-top: 23px;
+    }
+    /* Footer End Here */
+}
+/* ===================== Medium Devices ===================== */
+@media(min-width: 768px) and (max-width: 991.98px){
+    /* Nav Start Here */
+    .navbar-toggler {
+        border: none
+    }
+    .navbar-toggler{
+        padding: 0;
+    }
+    .navbar-toggler:focus {
+        box-shadow: none
+    }
+    .navbar-nav {
+        padding-top: 10px;
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    a.nav-link.nav_item_link {
+        padding: 0px 0px !important;
+        font-size: 16px;
+    }
+    /* Nav End Here */
+
+    /* Banner Start Here */
+    #banner{
+        padding: 82px 0;
+    }
+    .banner_content h1 {
+        font-size: 50px;
+    }
+    .banner_content h1 span {
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .teach_board{
+        display: none;
+    }
+    .header_shape {
+        width: 296px;
+    }
+    .banner_img {
+        width: 260px;
+        margin: 0 auto;
+    }
+    /* Banner End Here */
+
+    /* Feature Start Here */
+    .feature_img {
+        padding: 30px 0;
+    }
+    .details_icon {
+        margin-bottom: 14px;
+    }
+    /* Feature End Here */
+
+    /* Screen Shot Start Here */
+    #screenShot {
+        margin-top: 60px;
+    }
+    .screenshot_image {
+        margin: 0;
+    }
+    .slick-slide img {
+        width: 230px;
+        margin: 0 auto;
+    }
+    /* Screen Shot End Here */
+
+     /* Videos Start Here */
+    #videos {
+        margin-top: 60px;
+        padding: 120px 0;
+    }
+    /* Videos End Here */
+
+    /* Rreviews Start Here */
+    #reviews {
+        margin-top: 60px;
+    }
+    .reviews_details {
+        margin-bottom: 16px;
+    }
+    /* Reviews End Here */
+
+    /* Counst Start Here */
+    #counts {
+        margin-top: 36px;
+    }
+    /* Counst End Here */
+
+    /* Team Start Here */
+    #team {
+        padding: 60px 0 10px 0;
+    }
+    .team_box {
+        margin: 16px 0 0px 0;
+    }
+    .team_details h4 {
+        font-size: 20px;
+    }
+    .team_details span {
+        font-size: 14px;
+    }
+    /* Team End Here */
+
+    /* App Download Start Here */
+    #download {
+        padding: 40px 0;
+        margin: 50px 0 0 0;
+    }
+    .download_app_details h2 {
+        font-size: 30px;
+    }
+    .download_app_details p {
+        font-size: 14px;
+    }
+    .d_image {
+        display: none;
+    }
+    .d_image2 {
+        display: none;
+    }
+    .d_button {
+        column-gap: 12px;
+    }
+    .d_button a {
+        padding: 6px 10px;
+    }
+    .d_button a i {
+        font-size: 20px;
+        margin: 0;
+    }
+    /* App Download End Here */
+
+    /* Faq Start Here */
+    #faq {
+        padding: 25px 0;
+    }
+    .faq_heading h2 {
+        margin-top: 0;
+    }
+    .faq_heading p {
+        font-size: 14px;
+    }
+    .faq_accordion {
+        padding: 15px 6px;
+    }
+    .accordion-header {
+        padding: 6px 0px;
+    }
+    /* Faq End Here */
+
+    /* Learn More Start Here */
+    #learnMore {
+        padding: 30px 0;
+    }
+    .learn_title h2 {
+        font-size: 28px;
+    }
+    .learn_para p {
+        font-size: 14px;
+        color: #ddd !important;
+    }
+    .learn_button {
+        text-align: left !important;
+    }
+    /* Learn More End Here */
+
+    /* Footer Start Here */
+    #footer {
+        padding: 25px 0 10px 0;
+        margin-top: 20px;
+    }
+    .widget_img {
+        margin-bottom: 12px;
+    }
+    .widget p {
+        font-size: 14px;
+    }
+    .widget_social_link {
+        margin-bottom: 25px;
+    }
+    .widget_list {
+        margin-top: 14px;
+    }
+    .widget_app_download {
+        margin-top: 18px;
+        flex-direction: row;
+        column-gap: 20px;
+    }
+    .widget_app_download a {
+        padding: 10px 6px;
+    }
+    .copyright {
+        padding-top: 23px;
+    }
+    /* Footer End Here */
 }

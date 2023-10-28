@@ -1,12 +1,40 @@
 
-
 $(function () {
-  $('.preloader').preloadinator().delay(700).fadeOut(1000)
-  //preloader
-  // $(window).on('load',function(){
-  //   $('.preloader').delay(700).fadeOut(300);
-  // });
-
+  // Preeloader
+  $('.preloader').preloadinator().delay(800).fadeOut(1000)
+  //sticky menu
+  $(window).on('scroll',function(){
+    // let main = 0
+    var main = $(this).scrollTop();
+    if(main > 250){
+      $(".navbar").addClass("xyz")
+    }else{
+      $(".navbar").removeClass("xyz")
+    }
+    if(main > 300){
+      $('.bottom_top_icon').fadeIn(300);
+    }
+    else{
+      $('.bottom_top_icon').fadeOut(300);
+    }
+  });
+  //scroll-spy & Smooth-scrolling
+  let scrollLink = $('.scroll-link');
+    $(scrollLink).on('click',function(event){
+        event.preventDefault();
+        $('html,body').animate({scrollTop: $(this.hash).offset().top-80},1000);
+    });
+    $(window).on('scroll',function(){
+        let scrollTop = $(this).scrollTop();
+        scrollLink.each(function(){
+        let sectionhead = $(this.hash).offset().top-85;
+        if(scrollTop >= sectionhead) {
+            $(this).parent().addClass('active');
+            $(this).parent().siblings().removeClass('active');
+        }
+        });
+    });
+  // Screenshot Slider
   $('.screenshot_wrapper').slick({
     infinite: true,
     slidesToShow: 4,
@@ -43,22 +71,6 @@ $(function () {
       // settings: "unslick"
       // instead of a settings object
     ]
-  });
-  //sticky menu
-  $(window).on('scroll',function(){
-    let main = 0
-    main = $(this).scrollTop();
-    if(main > 250){
-      $(".navbar").addClass("xyz")
-    }else{
-      $(".navbar").removeClass("xyz")
-    }
-    if(main > 300){
-      $('.bottom_top_icon').fadeIn(300);
-    }
-    else{
-      $('.bottom_top_icon').fadeOut(300);
-    }
   });
   //Venobox js
   $('.venobox').venobox();
