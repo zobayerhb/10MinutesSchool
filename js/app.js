@@ -24,16 +24,6 @@ $(function () {
         event.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top-80},1000);
     });
-    $(window).on('scroll',function(){
-        let scrollTop = $(this).scrollTop();
-        scrollLink.each(function(){
-        let sectionhead = $(this.hash).offset().top-85;
-        if(scrollTop >= sectionhead) {
-            $(this).parent().addClass('active');
-            $(this).parent().siblings().removeClass('active');
-        }
-        });
-    });
   // Screenshot Slider
   $('.screenshot_wrapper').slick({
     infinite: true,

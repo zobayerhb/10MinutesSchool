@@ -244,6 +244,11 @@
         padding-top: 23px;
     }
     /* Footer End Here */
+    /* Bottom to Top Start Here */
+    .bottom_top_icon {
+        right: 8px;
+        bottom: 6px;
+    }
 }
 /* ===================== Small Devices ===================== */
 @media(min-width: 576px) and (max-width: 767.98px) {

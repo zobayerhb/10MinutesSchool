@@ -178,6 +178,7 @@ a {
   -o-transform: rotate(22deg);
   position: relative;
   z-index: 555;
+  padding-top: 30px;
 }
 .b_shape_img {
   position: absolute;
