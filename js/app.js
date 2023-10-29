@@ -1,7 +1,9 @@
-
 $(function () {
   // Preeloader
-  $('.preloader').preloadinator().delay(800).fadeOut(1000)
+  $('.preloader').preloadinator().delay(800).fadeOut(800)
+})
+
+$(function () {
   //sticky menu
   $(window).on('scroll',function(){
     // let main = 0
