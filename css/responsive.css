@@ -30,15 +30,16 @@
 
     /* Banner Start Here */
     #banner{
-        padding: 82px 0;
+        padding: 82px 0 25px 0;
+        margin-bottom: 42px;
     }
     .banner_content h1 {
-        font-size: 36px;
+        font-size: 30px;
         text-align: center;
         margin-bottom: 17px;
     }
     .banner_content h1 span {
-        font-size: 36px;
+        font-size: 30px;
         font-weight: 600;
     }
     .banner_content p {
@@ -54,7 +55,7 @@
     .banner_img {
         width: 196px;
         margin: 0 auto;
-        padding-top: 10px;
+        padding-top: 20px;
     }
     /* Banner End Here */
 
@@ -218,11 +219,7 @@
     .widget_img {
         margin-bottom: 12px;
     }
-    .widget{
-        text-align: center;
-    }
     .widget p {
-        text-align: left;
         font-size: 14px;
     }
     .widget_social_link {
@@ -235,10 +232,13 @@
         margin-top: 18px;
         flex-direction: row;
         column-gap: 20px;
-        justify-content: center;
     }
     .widget_app_download a {
-        padding: 10px 6px;
+        padding: 10px 7px;
+        text-align: center;
+    }
+    .widget_app_download a i {
+        margin-right: 0px;
     }
     .copyright {
         padding-top: 23px;
@@ -275,6 +275,7 @@
     /* Banner Start Here */
     #banner{
         padding: 82px 0;
+        margin-bottom: 50px;
     }
     .banner_content h1 {
         font-size: 38px;
@@ -453,7 +454,6 @@
     /* Footer Start Here */
     #footer {
         padding: 25px 0 10px 0;
-        margin-top: 20px;
     }
     .widget_img {
         margin-bottom: 12px;
@@ -473,7 +473,7 @@
         column-gap: 20px;
     }
     .widget_app_download a {
-        padding: 10px 6px;
+        padding: 10px 16px;
     }
     .copyright {
         padding-top: 23px;
@@ -507,6 +507,7 @@
     /* Banner Start Here */
     #banner{
         padding: 82px 0;
+        margin-bottom: 70px;
     }
     .banner_content h1 {
         font-size: 50px;
@@ -552,7 +553,7 @@
      /* Videos Start Here */
     #videos {
         margin-top: 60px;
-        padding: 120px 0;
+        padding: 92px 0;
     }
     /* Videos End Here */
 
@@ -573,7 +574,7 @@
 
     /* Team Start Here */
     #team {
-        padding: 60px 0 10px 0;
+        padding: 60px;
     }
     .team_box {
         margin: 16px 0 0px 0;
@@ -587,10 +588,6 @@
     /* Team End Here */
 
     /* App Download Start Here */
-    #download {
-        padding: 40px 0;
-        margin: 50px 0 0 0;
-    }
     .download_app_details h2 {
         font-size: 30px;
     }
@@ -617,10 +614,7 @@
 
     /* Faq Start Here */
     #faq {
-        padding: 25px 0;
-    }
-    .faq_heading h2 {
-        margin-top: 0;
+        padding: 46px 0;
     }
     .faq_heading p {
         font-size: 14px;
@@ -633,26 +627,9 @@
     }
     /* Faq End Here */
 
-    /* Learn More Start Here */
-    #learnMore {
-        padding: 30px 0;
-    }
-    .learn_title h2 {
-        font-size: 28px;
-    }
-    .learn_para p {
-        font-size: 14px;
-        color: #ddd !important;
-    }
-    .learn_button {
-        text-align: left !important;
-    }
-    /* Learn More End Here */
-
     /* Footer Start Here */
     #footer {
-        padding: 25px 0 10px 0;
-        margin-top: 20px;
+        padding: 50px 0 10px 0;
     }
     .widget_img {
         margin-bottom: 12px;
@@ -671,10 +648,66 @@
         flex-direction: column;
     }
     .widget_app_download a {
-        padding: 10px 6px;
+        padding: 10px 16px;
+        text-align: center;
     }
     .copyright {
         padding-top: 23px;
+    }
+    /* Footer End Here */
+}
+/* ===================== Large Devices ===================== */
+@media(min-width: 992px) and (max-width: 1199.98px){
+    /* Nav Start Here */
+    .navbar > .container{
+        padding: 0;
+    }
+    .nav_logo {
+        width: 108px;
+    }
+    .nav_item_link {
+        padding: 6px 14px !important;
+    }
+    /* Nav End Here */
+    /* Banner Start Here */
+    #banner{
+        padding: 82px 0;
+        margin-bottom: 70px;
+    }
+    .banner_content h1 span {
+        font-size: 58px;
+    }
+    .teach_board{
+        display: none;
+    }
+    .banner_img {
+        width: 260px;
+        margin: 0 auto;
+    }
+    /* Banner End Here */
+    /* Team Start Here */
+    .team_details span {
+        font-size: 14px;
+    }
+    /* Team End Here */
+    /* App Download Start Here */
+    .d_image {
+        right: 214px;
+    }
+    .d_image2 {
+        right: 45px;
+    }
+    /* App Download End Here */
+    /* Footer Start Here */
+    .widget p{
+        max-width: 500px;
+    }
+    .widget_social_link {
+        margin-bottom: 20px;
+    }
+    .widget_app_download a {
+        padding: 10px 16px;
+        text-align: center;
     }
     /* Footer End Here */
 }

@@ -136,7 +136,7 @@ a {
 .teach_board {
   position: absolute;
   top: 8px;
-  right: -224px;
+  right: -240px;
   width: 230px;
   animation: teach_board 2s linear alternate infinite;
   -webkit-animation: teach_board 2s linear alternate infinite;
@@ -192,7 +192,7 @@ a {
 }
 .header_wave {
   position: absolute;
-  bottom: -1px;
+  bottom: -2px;
   left: 0;
   width: 100%;
 }
@@ -264,7 +264,6 @@ a {
 }
 .icon_detail h6 {
   font-size: 20px;
-  /* font-weight: 500; */
   margin-bottom: 10px;
   color: #fff;
 }
@@ -274,6 +273,189 @@ a {
   color: var(--button-color);
 }
 /* Feature End Here */
+
+/* Screen Shot Start Here */
+#screenShot {
+  margin-top: 100px;
+}
+.screenshot_image{
+  margin: 0 20px;
+}
+#screenShot .slick-dots{
+  display: flex;
+  justify-content: center;
+  margin-top: 45px;
+  column-gap: 10px;
+}
+#screenShot .slick-dots li button{
+  display: none;
+}
+#screenShot .slick-dots li {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  cursor: pointer;
+}
+#screenShot .slick-dots li.slick-active{
+  background-color: var(--button-color);
+}
+/* Screen Shot End Here */
+
+/* App Videos Start Here */
+#videos{
+  background: linear-gradient(rgba(17, 24, 39, 0.74), rgba(17, 24, 39, 0.74)), url("../images/video_part.jpg") 50% 50% fixed;
+  padding: 200px 0;
+  margin-top: 100px;
+}
+.videos_icon{
+  position: relative;
+}
+.videos_icon a i{
+  font-size: 70px;
+  color: var(--button-color);
+  position: relative;
+}
+.videos_icon a i:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #06ff0063;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  z-index: 99;
+  transition: all linear 0.2s;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -ms-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+  animation: pulse 1.5s infinite;
+  -webkit-animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    opacity: 0.75;
+  }
+  100% {
+    transform: scale(1.4);
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    -o-transform: scale(1.4);
+    opacity: 0;
+  }
+}
+.videos_icon h2 {
+  color: #fff;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+.videos_icon p {
+  font-size: 15px;
+  color: #ddddddd6;
+  line-height: 25px;
+}
+.vbox-container {
+  max-width: 800px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.vbox-close {
+  font-size: 20px;
+}
+/* App Videos End Here */
+
+/* Reviews Start here */
+#reviews {
+  margin-top: 100px;
+  background: url("../images/client_bg.svg");
+  background-position: center;
+  overflow: hidden;
+}
+.reviews_heading h2 {
+  color: #000;
+  font-size: 42px;
+}
+.reviews_heading p {
+  color: #999999;
+  font-size: 16px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.reviews_details {
+  background: var(--secondary-color);
+  padding: 60px 38px;
+  cursor: pointer;
+  border-radius: 6px;
+  box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
+  transition: all linear 0.3s;
+  -webkit-transition: all linear 0.3s;
+  -moz-transition: all linear 0.3s;
+  -ms-transition: all linear 0.3s;
+  -o-transition: all linear 0.3s;
+}
+.reviews_details p {
+  color: #aaaaaa;
+  line-height: 170%;
+  text-align: justify;
+}
+.client_information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.client_name h5 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+}
+.client_reviews i {
+  font-size: 14px;
+  color: #f3be3c;
+}
+.reviews_details:hover {
+  background: var(--button-color);
+}
+.reviews_details:hover p {
+  color: #f5f3f3;
+}
+.reviews_details:hover .client_information h5 {
+  color: var(--primary-color);
+}
+.reviews_details:hover.client_information i {
+  font-size: 16px;
+}
+/* Reviews End here */
+
+/* Counter Start Here */
+#counts{
+  background: var(--secondary-color);
+  padding: 100px 0;
+  margin-top: 100px;
+}
+.counter_up {
+  text-align: center;
+  color: white;
+  border: 2px solid rgb(17, 166, 76);
+  padding: 32px 0;
+  border-radius: 5px;
+}
+.counter_up h1 {
+  color: #11a64c;
+  margin-bottom: 14px;
+}
+/* Counter End Here */
 
 /* Team Start Here */
 #team {
@@ -367,191 +549,6 @@ a {
 }
 /* Team End Here */
 
-/* Reviews Start here */
-#reviews {
-  margin-top: 100px;
-  background: url("../images/client_bg.svg");
-  background-position: center;
-  overflow: hidden;
-}
-.reviews_heading h2 {
-  color: #000;
-  font-size: 42px;
-}
-.reviews_heading p {
-  color: #999999;
-  font-size: 16px;
-  max-width: 500px;
-  margin: 0 auto;
-}
-.reviews_details {
-  background: var(--secondary-color);
-  padding: 60px 38px;
-  cursor: pointer;
-  border-radius: 6px;
-  box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1);
-  transition: all linear 0.3s;
-  -webkit-transition: all linear 0.3s;
-  -moz-transition: all linear 0.3s;
-  -ms-transition: all linear 0.3s;
-  -o-transition: all linear 0.3s;
-}
-.reviews_details p {
-  color: #aaaaaa;
-  line-height: 170%;
-  text-align: justify;
-
-}
-.client_information {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.client_name h5 {
-  color: #fff;
-  font-size: 16px;
-  margin: 0;
-}
-.client_reviews i {
-  font-size: 14px;
-  color: #f3be3c;
-}
-.reviews_details:hover {
-  background: var(--button-color);
-}
-.reviews_details:hover p {
-  color: #f5f3f3;
-}
-.reviews_details:hover .client_information h5 {
-  color: var(--primary-color);
-}
-.reviews_details:hover.client_information i {
-  font-size: 16px;
-}
-/* Reviews End here */
-
-
-/* App Videos Start Here */
-#videos{
-  background: linear-gradient(rgba(17, 24, 39, 0.74), rgba(17, 24, 39, 0.74)), url("../images/video_part.jpg") 50% 50% fixed;
-  padding: 200px 0;
-  margin-top: 100px;
-}
-.videos_icon{
-  position: relative;
-}
-.videos_icon a i{
-  font-size: 70px;
-  color: var(--button-color);
-  position: relative;
-}
-.videos_icon a i:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #06ff0063;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-  z-index: 99;
-  transition: all linear 0.2s;
-  -webkit-transition: all linear 0.2s;
-  -moz-transition: all linear 0.2s;
-  -ms-transition: all linear 0.2s;
-  -o-transition: all linear 0.2s;
-  animation: pulse 1.5s infinite;
-  -webkit-animation: pulse 1.5s infinite;
-}
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-    -ms-transform: scale(1);
-    -o-transform: scale(1);
-    opacity: 0.75;
-  }
-  100% {
-    transform: scale(1.4);
-    -webkit-transform: scale(1.4);
-    -moz-transform: scale(1.4);
-    -ms-transform: scale(1.4);
-    -o-transform: scale(1.4);
-    opacity: 0;
-  }
-}
-.videos_icon h2 {
-  color: #fff;
-  font-size: 42px;
-  text-transform: capitalize;
-}
-.videos_icon p {
-  font-size: 15px;
-  color: #ddddddd6;
-  line-height: 25px;
-}
-.vbox-container {
-  max-width: 800px;
-  overflow: hidden;
-  margin: 0 auto;
-}
-.vbox-close {
-  font-size: 20px;
-}
-/* App Videos End Here */
-
-/* Counter Start Here */
-#counts{
-  background: var(--secondary-color);
-  padding: 100px 0;
-  margin-top: 100px;
-}
-.counter_up {
-  text-align: center;
-  color: white;
-  border: 2px solid rgb(17, 166, 76);
-  padding: 32px 0;
-  border-radius: 5px;
-}
-.counter_up h1 {
-  color: #11a64c;
-  margin-bottom: 14px;
-}
-/* Counter End Here */
-
-/* Screen Shot Start Here */
-#screenShot {
-  margin-top: 100px;
-}
-.screenshot_image{
-  margin: 0 20px;
-}
-#screenShot .slick-dots{
-  display: flex;
-  justify-content: center;
-  margin-top: 45px;
-  column-gap: 10px;
-}
-#screenShot .slick-dots li button{
-  display: none;
-}
-#screenShot .slick-dots li {
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--secondary-color);
-  cursor: pointer;
-}
-#screenShot .slick-dots li.slick-active{
-  background-color: var(--button-color);
-}
-/* Screen Shot End Here */
-
 /* App download link start here */
 #download {
   background: var(--secondary-color);
@@ -610,7 +607,6 @@ a {
     transform: translateY(5%);
   }
 }
-
 .d_image2 {
   position: absolute;
   width: 270px;
@@ -631,19 +627,12 @@ a {
 }
 .faq_heading p {
   color: #000;
-  text-align: center;
   max-width: 600px;
   margin: 0 auto;
   padding-bottom: 28px;
 }
-.faq_accordion {
-  /* box-shadow: 0px 0px 20px 0px rgba(222, 222, 222, 1); */
-  padding: 15px 36px;
-  /* background: #fff; */
-  border-radius: 10px;
-}
-.accordion-header {
-  padding: 10px 20px;
+.accordion-flush .accordion-item .accordion-button, .accordion-flush .accordion-item .accordion-button.collapsed {
+	border-radius: 10px;
 }
 .accordion-button:focus {
   border-color: 0;
@@ -651,7 +640,8 @@ a {
   box-shadow: none;
 }
 .accordion-button:not(.collapsed) {
-  background-color: transparent;
+  background-color: var(--button-color);
+  color: #fff;
 }
 .accordion-button::after {
   background-image: url("../images/faq_icon.png");
@@ -712,12 +702,11 @@ a {
 /* Footer Start here */
 #footer{
   background: var(--secondary-color);
-  padding: 70px 0 35px 0;
+  padding: 70px 0 10px 0;
 }
-
 .widget_img {
   filter: invert(1);
-  width: 100px;
+  width: 120px;
   cursor: pointer;
   margin-bottom: 22px;
 }
@@ -770,7 +759,6 @@ a {
   -ms-transition: all linear 0.3s;
   -o-transition: all linear 0.3s;
 }
-
 ul.widget_list li a:hover {
   color: var(--button-color);
 }
@@ -783,7 +771,7 @@ ul.widget_list li a:hover {
 .widget_app_download a{
   background: transparent;
   border: 1px solid #fff;
-  padding: 10px 20px;
+  padding: 10px 16px;
   border-radius: 5px;
   transition: all linear 0.3s;
   -webkit-transition: all linear 0.3s;
@@ -792,7 +780,6 @@ ul.widget_list li a:hover {
   -o-transition: all linear 0.3s;
   width: 166px;
   color: #fff;
-  text-align: center;
 }
 .widget_app_download a i {
   font-size: 22px;
@@ -807,7 +794,7 @@ ul.widget_list li a:hover {
 /* Copyright Start Here */
 .copyright {
   border-top: 2px solid var(--button-color);
-  padding-top: 34px;
+  padding-top: 23px;
   color: #ddddddd6;
 }
 .copyright p a {
@@ -815,8 +802,6 @@ ul.widget_list li a:hover {
   color: #11a64c;
 }
 /* Copyright End Here */
-
-
 /* Footer End here */
 
 /* Bottom Top Start here */
@@ -874,6 +859,6 @@ ul.widget_list li a:hover {
 /* Modal Start Here */
 .modal-content{
   font-family: "Poppins", sans-serif;
-  padding: 14px 40px;
+  padding: 14px 25px;
 }
 /* Modal End Here */
